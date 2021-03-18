@@ -7,16 +7,33 @@
     <title>lab首頁</title>
     <style type="text/css">
     table{
-        width: 200px;
+        width: 700px;
+        border: 2px solid;
 
 
     }
     a{
         text-decoration: none;
-        color: #fc0;
-        padding: 3px 5px;
+        color: #aad;
+        padding: 5px 5px;
         text-align: center;
+        margin: 5px;
+
     }
+
+    p{
+        padding: 0px;
+    }
+
+    a:active {
+        color: #999;
+    }
+
+    .main {
+        border-bottom: 2px solid;
+    }
+
+ 
 
     
     </style>
@@ -24,17 +41,48 @@
 
 </head>
 <body>
-    <table border="3"> 
-    <tr>
-        <td colspan="2"><a href="./index.html">首頁</a></td>
+    <h1>Lab練習列表</h1>
+    <table > 
+    <tr > 
+        <td colspan="2" class="main">
+            <h3>檔案 ＼ 內容 </h2> 
+        </td>
     </tr>
     
         <tr>
-           
-            <td><a href="./lab_01.html">lab_01</a></td>
-            <td><a href="./lab_02.html">lab_02</a></td>
+            
+            <td >
+                <a href="./index.html">所有ｌａｂ列表</a></br>
+               
+                
+
+            
+            </td>
+            <td>
+                <p>所有lab練習列表</p>
+                
+               
+                
+            </td>
+            
         </tr>
-        
+        <tr>
+            <td> <a href="./lab_01.html">lab_01</a></br></td>
+            <td><p>製作課表</p></td>
+        </tr>
+        <tr>
+            <td><a href="./lab_02.html">lab_02</a></td>
+            <td><p>利用css(style)美化課表</p></td>
+        </tr>
+        <tr>
+            <td><a href="./lab_04.html">lab_04</a></td>
+            <td><p>在 head區段中使用 style 標籤，美化課表</p></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+
     
     </table>
 </body>
