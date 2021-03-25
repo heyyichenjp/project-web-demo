@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 08</title>
+    <style type="text/css">
+        body {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border: 1px lightgray solid;
+        }
+        
+        th,
+        td {
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+            width: 7vmin;
+            height: 7vmin;
+            
+        }
+       
+        /* 請在此加入更多 style */
+        
+        /* td:nth-child(3){
+            background-color: #000;
+
+        } */
+
+        /* td:nth-child(2n+1){
+            background-color: #aa0;
+        } */
+
+        tr:nth-child(3) td:nth-child(2),
+        tr:nth-child(3) td:nth-child(3),
+        tr:nth-child(3) td:nth-child(6),
+        tr:nth-child(3) td:nth-child(7),
+        tr:nth-child(4) td:nth-child(2),
+        tr:nth-child(4) td:nth-child(3),
+        tr:nth-child(4) td:nth-child(6),
+        tr:nth-child(4) td:nth-child(7),
+        tr:nth-child(5) td:nth-child(4),
+        tr:nth-child(5) td:nth-child(5),
+        tr:nth-child(6) td:nth-child(3),
+        tr:nth-child(6) td:nth-child(4),
+        tr:nth-child(6) td:nth-child(5),
+        tr:nth-child(6) td:nth-child(6),
+        tr:nth-child(7) td:nth-child(3),
+        tr:nth-child(7) td:nth-child(4),
+        tr:nth-child(7) td:nth-child(5),
+        tr:nth-child(7) td:nth-child(6),
+        tr:nth-child(8) td:nth-child(3),
+        tr:nth-child(8) td:nth-child(6)
+        {
+            
+            background-color: #000;
+        }
+
+        tr:nth-child(1) td:nth-child(3),
+        tr:nth-child(2) td:nth-child(4),
+        tr:nth-child(3) td:nth-child(5),
+        tr:nth-child(4) td:nth-child(5),
+        tr:nth-child(1) td:nth-child(1),
+        tr:nth-child(2) td:nth-child(2),
+        tr:nth-child(6) td:nth-child(7),
+        tr:nth-child(6) td:nth-child(2){
+            background-color: #66bb6a;
+
+        }
+
+        tr:nth-child(3) td:nth-child(1),
+        tr:nth-child(6) td:nth-child(1),
+        tr:nth-child(8) td:nth-child(8),
+        tr:nth-child(7) td:nth-child(7),
+        tr:nth-child(1) td:nth-child(2),
+        tr:nth-child(7) td:nth-child(1),
+        tr:nth-child(8) td:nth-child(2),
+        tr:nth-child(1) td:nth-child(8){
+            background-color: #a5d6a7;
+        }
+
+        tr:nth-child(2) td:nth-child(3),
+        tr:nth-child(4) td:nth-child(4),
+        tr:nth-child(5) td:nth-child(6),
+        tr:nth-child(1) td:nth-child(6),
+        tr:nth-child(1) td:nth-child(4),
+        tr:nth-child(1) td:nth-child(7),
+        tr:nth-child(2) td:nth-child(1),
+        tr:nth-child(2) td:nth-child(6){
+            background-color:#4caf50 ;
+        }
+
+        tr:nth-child(8) td:nth-child(7),
+        tr:nth-child(8) td:nth-child(4),
+        tr:nth-child(8) td:nth-child(5),
+        tr:nth-child(8) td:nth-child(1),
+        tr:nth-child(2) td:nth-child(5),
+        tr:nth-child(4) td:nth-child(1),
+        tr:nth-child(4) td:nth-child(8),
+        tr:nth-child(6) td:nth-child(8){
+            background-color: #388e3c;
+        }
+
+        tr:nth-child(2) td:nth-child(3),
+        tr:nth-child(3) td:nth-child(4),
+        tr:nth-child(1) td:nth-child(5),
+        tr:nth-child(2) td:nth-child(8),
+        tr:nth-child(5) td:nth-child(1),
+        tr:nth-child(5) td:nth-child(3),
+        tr:nth-child(7) td:nth-child(8){
+            background-color:#81c784 ;
+        }
+
+        tr:nth-child(2) td:nth-child(7),
+        tr:nth-child(3) td:nth-child(8),
+        tr:nth-child(5) td:nth-child(2),
+        tr:nth-child(5) td:nth-child(7),
+        tr:nth-child(5) td:nth-child(8),
+        tr:nth-child(7) td:nth-child(2){
+            background-color: #2d7c31;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td></td>
+                <td class="a"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
