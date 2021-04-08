@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+             border: 1px solid #fff; 
+            
+            
+
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background-image: url('/img/gray.jpg');
+            display: grid;
+            position: relative;
+            border: 1px solid ;
+        }
+        .one{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            
+
+        }
+        .center{
+            background-image:url("/img/centerbcc.jpg");
+            position: relative;
+        
+        }
+        .center img{
+            width: 80px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+
+        img{
+            width: 80px;
+            position: absolute;
+            bottom: 0;
+           
+            
+            
+        }
+ 
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="one">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="one">
+            <div></div>
+            <div class="center"><img src="/img/center.gif" alt=""></div>
+            <div></div>
+        </div>
+        <div class="one">
+            <div ><img src="/img/little.gif" alt="" ></div>
+            <div ><img src="/img/little.gif" alt="" ></div>
+            <div > 
+            <img src="/img/little.gif" alt="">
+            <img src="/img/little.gif" alt="" >
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+   
+</body>
+</html>
