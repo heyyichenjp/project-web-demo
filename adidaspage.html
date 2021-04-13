@@ -18,8 +18,7 @@
     .banner img{
         display: block;
         margin: 20px auto;
-        min-width: 70vw;
-        height: 500px;
+        height: auto;
         
     }
     h1{
@@ -124,6 +123,29 @@
         width: 100vw;
         height: 20px;
         font-size: 0.7rem;
+    }
+
+    @media screen and (max-width:800px){
+        .banner img{
+            width: 100vw;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .list-group{
+            width: 90vw;
+
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .product{
+            width: 100vw;
+        }
+
     }
   
     </STyle>
