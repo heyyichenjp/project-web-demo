@@ -11,8 +11,18 @@
 
     <STyle type="text/css">
     body{
-        background-color: #fff;
+        background-color: rgb(204, 204, 176);
+        width: 100vw;
+        margin: auto 0;
+        overflow-x: hidden;
+        
     }
+    .banner{
+        position: relative;
+
+    }
+
+
     h1{
         display: inline-block;
         font-weight: 700;
@@ -20,10 +30,10 @@
     }
 
     .nav{
-        position: fixed;
-        top: 5px;
+        position: absolute;
+        top: 7px;
         right: 0;
-        
+        z-index: 1;
 
     }
 
@@ -36,8 +46,15 @@
         transition: 1s;
     }
 
+
     .carousel-inner img{
         height: auto;
+        
+
+    }
+    .carousel-indicators{
+        width: 100%;
+        
     }
 
     .event{
@@ -52,6 +69,7 @@
         font-size: 2.5rem;
         font-weight: 100;
         background-color: transparent;
+        color: #fff;
         
     }
 
@@ -81,6 +99,7 @@
         text-align: center;
         font-weight: 700;
         font-size: 30px;
+        color: #fff;
         
     }
    
@@ -190,22 +209,36 @@
         padding: 2px;
         position: relative;
         bottom: 0;
-        width: 100vw;
         height: 20px;
         font-size: 0.7rem;
+        width: 100%;
     }
 
     @media screen and (max-width:600px){
         #panel{
-            width: 100vw;
+            width: 100%;
             
         }
         .banner{
-            width: 100vw;
+            width: 100%;
+        }
+
+        .nav{
+            position: relative;
+            top: 0;
+
+
+        }
+
+        .carousel{
+            width: 100%;
+
         }
         ol{
             flex-direction: column;
+
         }
+       
     }
   
     </STyle>
@@ -346,7 +379,7 @@
         </div>
     </div>
 
-    <div class="ad">
+    <!-- <div class="ad">
         <button>x</button>
         <div class="adp">
         <p>ＮＥＷ </p>
@@ -355,7 +388,7 @@
         </div>
         
     
-    </div>
+    </div> -->
 
    
 

@@ -7,12 +7,19 @@
     <title>Shop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <STyle type="text/css">
+    html{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }    
     body{
         background-color: #fff;
+        width: 100%;
     }
 
     .header{
         border-bottom: 1px solid #aaa ;
+        position: relative;
     }
 
     .banner img{
@@ -29,15 +36,18 @@
     }
 
     .nav{
-        position: fixed;
-        top: 5px;
+        position: absolute;
+        top: 7px;
         right: 0;
         
 
     }
 
+    
+
     .nav a{
         color:rgba(100,100,20,70%);
+
     }
 
     .nav a:hover{
@@ -122,14 +132,14 @@
         padding: 2px;
         position: fixed;
         bottom: 0;
-        width: 100vw;
         height: 20px;
         font-size: 0.7rem;
+        width: 100vw;
     }
 
     @media screen and (max-width:800px){
         .banner img{
-            width: 100vw;
+            width: 100%;
         }
         .container{
             display: flex;
@@ -137,7 +147,7 @@
         }
 
         .list-group{
-            width: 90vw;
+            width: 90%;
 
         }
         .content{
@@ -145,7 +155,7 @@
             grid-template-columns: 1fr;
         }
         .product{
-            width: 100vw;
+            width: 100%;
         }
 
     }
