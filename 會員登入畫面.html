@@ -14,13 +14,13 @@
 <link rel="stylesheet" type="text/css" href="../common/css/normalize.css" /> 
 <script type="text/javascript" src="../common/jquery/jquery.min-1.11.js"></script>
 <style type="text/css">
-html,body{
-    width:100%;
-    height:100%;
-    margin: 0;
-	padding: 0;
-    /* overflow: hidden; */
-}
+	html,body{
+		width:100%;
+		height:100%;
+		margin: 0;
+		padding: 0;
+		/* overflow: hidden; */
+	}
 .center{
     width:100%;
     height:100%;
@@ -60,7 +60,7 @@ html,body{
    border-radius:4px;
    box-shadow:0px 0px 30px #000;
    background: rgb(152, 166, 196);
-   align:center;
+   
 }
 .lgtop-div{
     width: 100%;
@@ -68,7 +68,7 @@ html,body{
 	text-indent: 25px;
 	font-size: 18px;
 	margin-bottom: -10px;
-	//color: #fff;
+	color: #fff;
 }
 .lg-div{
    width:350px;
@@ -119,7 +119,7 @@ input{
 	cursor: pointer;    
 	position: relative;
 	font-size: 12px;
-	//color:#fff;    
+	color:#fff;    
 	top: -4px;    
 	left: 0px;    
 }
@@ -164,10 +164,21 @@ button{
 
         background: url("https://up.enterdesk.com/edpic/88/31/e8/8831e892ceb6e3567a5906fa178a666f.jpg") ;
         background-size:contain;
-
-         align:"center";
+        text-align:"center";
 }
 .div {border-style:outset;}
+
+@media screen and (max-width: 800px) {
+	.background{
+		display: flex;
+		flex-direction: column;
+		margin: 20px 0;
+
+	}
+	
+}
+
+
 
     </style>
 

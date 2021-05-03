@@ -1,0 +1,151 @@
+<STyle type="text/css">
+body{
+    background-color: #fff;
+}
+
+.header{
+    border-bottom: 1px solid #aaa ;
+    position: relative;
+}
+
+.banner img{
+    display: block;
+    margin: 20px auto;
+    height: auto;
+    
+}
+h1{
+    display: inline-block;
+    font-weight: 700;
+
+}
+
+.nav{
+    position: absolute;
+    top: 7px;
+    right: 0;
+    
+
+}
+
+.nav a{
+    color:rgba(100,100,20,70%);
+}
+
+.nav a:hover{
+    background-color: #F5F5F5;
+    transition: 1s;
+}
+
+.pointout{
+    position: relative;
+    top: 6px;
+    left: 3px;
+
+}
+
+
+
+.pointout a{
+    color: #404040;
+    font-family: 'Roboto Mono', monospace;
+    font-size:0.9rem ;
+    
+
+}
+
+.pointout a:hover{
+    color:#aaa;
+    text-decoration: none;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 800px;
+    margin: 50px auto;
+}
+
+
+
+
+.content{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px auto;
+    
+}
+
+
+.product{
+    background-color: #aaa;
+    color: #fff;
+    display: fixed;
+    right:10;
+    margin: 20px 40px;
+    padding: 5px;
+    align-content: center;
+    max-width: 250px;
+    position: relative;
+    border-radius: 5% ;
+
+
+}
+
+.product img{
+    width: 240px;
+    height: 240px;
+    
+
+}
+h2{
+    font-weight:500 ;
+}
+
+.btn{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+
+}
+
+.footer{
+    background-color: black;
+    color:#fff;
+    text-align: center;
+    padding: 2px;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 20px;
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width:740px){
+    .banner img{
+        width: 100vw;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .product{
+        width: 100vw;
+    }
+
+    .nav{
+        position: relative;
+        top: 0;
+        
+    }
+
+}
+
+</STyle>
