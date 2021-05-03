@@ -12,6 +12,7 @@ body{
     display: block;
     margin: 20px auto;
     height: auto;
+    width: 90vw;
     
 }
 h1{
@@ -62,7 +63,7 @@ h1{
 
 .container{
     display: grid;
-    grid-template-columns: 200px 800px;
+    grid-template-columns: 2fr 8fr;
     margin: 50px auto;
 }
 
@@ -122,7 +123,7 @@ h2{
     font-size: 0.7rem;
 }
 
-@media screen and (max-width:740px){
+@media screen and (max-width:834px){
     .banner img{
         width: 100vw;
     }
