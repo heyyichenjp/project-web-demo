@@ -126,6 +126,7 @@ h2{
 @media screen and (max-width:834px){
     .banner img{
         width: 100vw;
+        height: auto;
     }
     .container{
         display: flex;
