@@ -1,0 +1,37 @@
+{% from 'bootstrap/form.html' import render_form %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    {{bootstrap.load_css()}}
+    <style>
+        a{
+            margin: 10px auto;
+            color: rgb(236, 197, 138);
+            text-decoration: none;
+            border: 1px solid;
+            padding: 3px;
+            text-align: center;
+        }
+    </style>
+  
+   
+</head>
+<body>
+    {% block content %}
+<div class="container">
+   <h1 style="text-align: center;color:rgb(90, 58, 28)"> Welcome! </h1>
+   
+   <a href="/index">HOME</a>	
+</div>
+{% endblock content%}
+
+
+
+</body>
+</html>    

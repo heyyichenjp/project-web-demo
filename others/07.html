@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        
+
+      }
+      .container{
+        position: relative;
+        top: 10px;
+        margin: auto;
+        width: 500px;
+        
+        
+      }
+
+      h2{
+        background-color: rgb(212, 172, 126);
+        padding: 5px;
+        font-size: 2.5rem;
+        height: 80px;
+        border-radius:20% 20% 0 0 ;
+        line-height: 80px;
+        font-family: 'Times New Roman', Times, serif;
+
+      }
+      .newone{
+        margin: 10px 0px;
+        font-size: 0.9rem;
+        border-bottom: 1px dashed; 
+        padding: 15px 0px;
+        
+
+      }
+
+      button{
+        font-size: 0.9rem;
+        padding: 2px;
+        margin: 0px 10px ; 
+        border-radius: 12px;
+        background-color: #e7e7e7;
+
+      }
+
+
+      li{
+        
+        color: #fff;
+        background-color: rgba(0,170,200 ,70%);
+        text-align: center;
+        padding: 3px;
+        font-size: 1.5rem;
+      }
+      li:hover{
+        background-color: rgba(0,170,200 ,40%);
+      }
+
+      
+      
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h2>To Do List</h2>
+    <div class="newone">
+      <input type="text" id="demoone" value="" placeholder="輸入..." size="30px">
+      <button > Click to add</button> 
+      <p>（點擊已完成之清單項目，可<s>劃線</s>確認！）</p>
+
+    </div>
+   
+
+    <ul id="myUL">
+      <!-- <li>123</li> -->
+    </ul>
+
+  </div>
+   
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+   
+
+    <script>
+      
+      $(document).ready(function(){
+        $("button").click(function(){
+          if (document.getElementById('demoone').value === '') {
+            alert ('請輸入內容');
+          }else{
+           
+            $("ul").append(function(){
+              return "<li>" + document.getElementById('demoone').value +"</li><br>" ;
+            });
+            
+            $('li').click(function(){
+              
+              $(this).css({'text-decoration':'line-through','color':'#a00'});
+
+            });
+            
+
+            
+            
+          }
+          
+        });
+
+      
+      });
+
+      
+
+
+    </script>
+       
+  
+</body>
+
+</html>
