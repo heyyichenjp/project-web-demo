@@ -17,12 +17,15 @@
         top: 10px;
         margin: auto;
         width: 500px;
-        
+        border: solid 0.5px;
+        padding: 5px;
         
       }
 
       h2{
-        background-color: rgb(212, 172, 126);
+        background: rgba(79, 133, 184, 0.9);  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fdbb2d, rgba(79, 133, 184, 0.9));  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fdbb2d, #739292); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         padding: 5px;
         font-size: 2.5rem;
         height: 80px;
@@ -53,13 +56,14 @@
       li{
         
         color: #fff;
-        background-color: rgba(0,170,200 ,70%);
+        background-color: rgba(79, 133, 184, 0.9);
         text-align: center;
         padding: 3px;
         font-size: 1.5rem;
+        list-style-type: square;
       }
       li:hover{
-        background-color: rgba(0,170,200 ,40%);
+        background-color: rgba(24, 56, 126, 0.3);
       }
 
       
