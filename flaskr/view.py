@@ -19,7 +19,7 @@ with app.app_context():
    db.create_all()
 
 
-@app.route('https://heyyichenjp.github.io/register', methods=['GET', 'POST'])
+@app.route('/register', methods=['GET', 'POST'])
 def register():   
    form = FormRegister()
    if form.validate_on_submit():
@@ -35,18 +35,18 @@ def register():
    return render_template('register.html', form=form)   
 
 
-@app.route('https://heyyichenjp.github.io/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 @login_required
 def base():
    return render_template('base.html')
 
 
-@app.route('https://heyyichenjp.github.io/index')
+@app.route('/index')
 def index():
    return render_template('index.html')
 
 
-@app.route('https://heyyichenjp.github.io/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
    form = FormLogin()
    if form.validate_on_submit():
@@ -77,7 +77,7 @@ def next_is_valid(url):
 
 
 
-@app.route('https://heyyichenjp.github.io/logout')
+@app.route('/logout')
 @login_required
 def logout():
    logout_user()
@@ -86,7 +86,7 @@ def logout():
 
 
 
-@app.route('https://heyyichenjp.github.io/userinfo')
+@app.route('/userinfo')
 def userinfo():
    return 'Here is UserINFO'
 
