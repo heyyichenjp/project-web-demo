@@ -44,7 +44,7 @@
     .item{
         width: 280px;
         height: 660px;
-        margin: 5px 10px;
+        margin: 10px 10px;
         background-color: rgb(61, 53, 34);
         transform: translateY(0);
         
@@ -88,13 +88,21 @@
     }
 
     .item:hover{
-        transform: translateY(-50px);
+        transform: translateY(-40px);
     }
 
     a{
         color: #fff;
         text-decoration: none;
 
+    }
+
+    @media  screen and (max-width:768px) {
+        .wrap{
+            flex-direction: column;
+            align-items: center;
+        }
+        
     }
 
 
@@ -121,7 +129,7 @@
             <img src="https://heyyichenjp.github.io/project-web-demo/exercise/img/PA223728.JPG" alt="">
             <div class="txt">
                 <h3>我的自傳</h3>
-                <p>    我是陳意蓁，在朋友的介紹下認識了前端工程師這份工作，自己上網收集資料，慢慢地對前端網頁開發、製作產生了興趣。之後前往逢甲大學進行短期的全端電腦程式開發課程的學習，在上課過程中，也嘗試自己解決問題，
+                <p>    我是陳意蓁，在朋友的介紹下認識了前端工程師這份工作，自己上網收集資料，慢慢地對前端網頁開發、製作產生了興趣。之後前往逢甲大學進行全端電腦程式開發課程的學習，在上課過程中，也嘗試自己解決問題，
                     得到了成就感，使我更確信未來想往相關工作進行發展，為公司帶來幫助、解決問題，也希望自己能從工作中、前輩身上學到更多實務層面的技術，並持續增進自己的能力。</p>
             </div>
            
@@ -132,7 +140,11 @@
             <div class="txt">
                 <h3>作品集</h3>
                 <p><!-- <a href="https://heyyichenjp.github.io/project-web-demo/lab/index.html">。lab練習</a><br>   -->
-                   <a href="https://heyyichenjp.github.io/project-web-demo/">。專題-代購網站</a>
+                   <a href="https://heyyichenjp.github.io/project-web-demo/">。課程專題-代購網站</a>
+                </p>
+                <p>
+                    <a href="https://heyyichenjp.github.io/project-web-demo/others/07.html">。To do list</a>
+
                 </p>
             </div>
            
