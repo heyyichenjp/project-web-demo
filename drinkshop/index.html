@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.products{
+			width: 80vw;
+			margin: 0 10vw;
+		}
+
+		img{
+			width: 20rem;
+			height: auto;
+		}
+
+		.section{
+			display: flex;
+			flex-wrap: wrap;
+			padding: 20px;
+		}
+		
+		.card{
+			margin: 10px;
+		}
+		.card-body{
+			display: flex;
+			justify-content: space-between;
+		}
+
+
+
+
+	
+	</style>
+</head>
+<body>
+	<div class="header">
+		<ul>
+			<li><nav class="navbar  navbar-light bg-light">
+				<a class="navbar-brand" href="#">地址:</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+			  
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+					  <a class="nav-link" href="#">訂單 <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">優惠卷</a>
+					</li>
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						個人檔案
+					  </a>
+					  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">地址</a>
+						<a class="dropdown-item" href="#">付款方式</a>
+						<!-- <div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a> -->
+					  </div>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">登出</a>
+					</li>
+				  </ul>
+			
+				</div>
+			  </nav>
+			<!-- </li>
+			<li><a href="">地址</a>
+			</li>
+			<li><a href="">收藏項目
+			</a></li>
+			<li><a href="">home</a></li> -->
+		</ul>
+		
+		<form class="form-inline my-2 my-lg-0" style="margin: auto;width:50vw">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋店家</button>
+		  </form>
+	</div>
+	<div class="banner">
+
+	</div>
+
+
+	<div class="products" id="app">
+		<h3>人氣店家推薦</h3>
+		<div class="section">
+			<div class="card" style="width: 20rem;">
+				<img src="https://images.pexels.com/photos/628776/pexels-photo-628776.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="card-img-top" alt="...">
+				<div class="card-body">
+					<div class="textarea">
+						<h5 class="card-title">Sushi</h5>
+                        <p>中和區,日料</p>
+						<p>＄29 外送服務費</p>
+					</div>
+				 
+				  <a href="#" class="btn btn-primary" style="height: 40px;"><i class="bi bi-heart" ></i></a>
+				</div>
+			  </div>
+			  <div class="card" style="width: 20rem;">
+				<img src="./pic/D3HSUtn.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<div class="textarea">
+						<h5 class="card-title">東南亞料理</h5>
+                        <p>中和區,東南亞料理</p>
+						<p>＄29 外送服務費</p>
+					</div>
+				 
+				  <a href="#" class="btn btn-primary" style="height: 40px;"><i class="bi bi-heart" ></i></a>
+				</div>
+			  </div>
+
+			  <div class="card" style="width: 20rem;">
+				<img src="https://images.pexels.com/photos/3850838/pexels-photo-3850838.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="card-img-top" alt="...">
+				<div class="card-body">
+					<div class="textarea">
+						<h5 class="card-title">Breakfast</h5>
+                        <p>中和區,早午餐</p>
+						<p>＄29 外送服務費</p>
+					</div>
+				 
+				  <a href="#" class="btn btn-primary" style="height: 40px;"><i class="bi bi-heart" ></i></a>
+				</div>
+			  </div>
+			  </div>  
+		
+	
+
+		<h3>想來點飲料</h3>
+		<div class="section">
+			
+			<div class="card" style="width: 20rem;">
+				<img src="https://images.pexels.com/photos/775030/pexels-photo-775030.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+				<div class="card-body">
+					<div class="textarea">
+						<h5 class="card-title">好喝果汁</h5>
+                        <p>中和區,飲料</p>
+						<p>＄29 外送服務費</p>
+					</div>
+				 
+				  <a href="#" class="btn btn-primary" style="height: 40px;"><i class="bi bi-heart" ></i></a>
+				</div>
+			  </div>
+			
+			
+			  <div class="card" style="width: 20rem;">
+	            <img src="https://images.pexels.com/photos/605408/pexels-photo-605408.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+				<div class="card-body">
+					<div class="textarea">
+						<h5 class="card-title">Bar</h5>
+                        <p>中和區,飲料</p>
+						<p>＄29 外送服務費</p>
+					</div>
+				 
+				  <a href="#" class="btn btn-primary" style="height: 40px;"><i class="bi bi-heart" ></i></a>
+				</div>
+			  </div>
+			  
+			  <div class="card" style="width: 20rem;">
+				<img src="https://images.pexels.com/photos/775030/pexels-photo-775030.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+				<div class="card-body">
+					<div class="textarea">
+						<h5 class="card-title">飲料店</h5>
+                        <p>萬華區,飲料</p>
+						<p>＄19 外送服務費</p>
+					</div>
+				 
+				  <a href="#" class="btn btn-primary" style="height: 40px;"><i class="bi bi-heart" ></i></a>
+				</div>
+			  </div>
+			  
+
+		</div>	  
+
+		<h3>速食店</h3>
+		<div class="section">
+
+			<div class="card" style="width: 20rem;">
+				<img src="https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+				<div class="card-body">
+					<div class="textarea">
+						<h5 class="card-title">Burgerrrr</h5>
+                        <p>中和區,速食</p>
+						<p>＄29 外送服務費</p>
+					</div>
+				 
+				  <a href="#" class="btn btn-primary" style="height: 40px;"><i class="bi bi-heart" ></i></a>
+				</div>
+			  </div>
+			  
+
+
+			  <div class="card" style="width: 20rem;">
+	            <img src="https://images.pexels.com/photos/365459/pexels-photo-365459.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" class="">
+				<div class="card-body">
+					<div class="textarea">
+						<h5 class="card-title">達美樂</h5>
+                        <p>中和區,速食</p>
+						<p>＄29 外送服務費</p>
+					</div>
+				 
+				  <a href="#" class="btn btn-primary" style="height: 40px;"><i class="bi bi-heart" ></i></a>
+				</div>
+			  </div>
+		  </div>
+
+		</div>
+		
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
