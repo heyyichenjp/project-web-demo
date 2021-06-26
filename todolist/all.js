@@ -23,7 +23,7 @@ function init(){
 		if(item.check == false){
 			let a = `<li>
 			<div class="textarea" >
-				<input type="checkbox" class="check" data-check='${item.check}' data-num='${index}'  >
+				<input type="checkbox" class="check" data-check='${index}'   >
 				 <span class='itemcontent'> ${item.content}</span>
 			</div>
 			
@@ -38,7 +38,7 @@ function init(){
 		}else{
 			let b = `<li>
 			<div class="textarea"    >
-				<span id='checkedlab'  data-check='${item.check}' data-num='${index}'> ✔︎</span>
+				<span id='checkedlab'  data-check='${index}' > ✔︎</span>
 				 <span class='itemcontent'><del> ${item.content}</del></span>
 			</div>
 			
@@ -65,7 +65,7 @@ function init(){
 //新增
 newbtn.addEventListener('click',function(e){
 	if(newarea.value == ''){
-		return alert('請輸入！')
+		return alert('請輸入待辦事項內容！')
 	}
     addSomthing()
 	init()
@@ -86,12 +86,12 @@ function addSomthing(){
 list.addEventListener('click',function(e){
 	//console.log(e.target.nodeName)
 	if(e.target.nodeName === 'INPUT'){
-		let a = e.target.getAttribute('data-num')
+		let a = e.target.getAttribute('data-check')
 		newin[a].check = true 
 		return init()
 
 	}else if(e.target.nodeName === 'SPAN'){
-		 let a = e.target.getAttribute('data-num')
+		 let a = e.target.getAttribute('data-check')
 		 console.log(newin[a].check)
 		 newin[a].check = false
 		 return init()
