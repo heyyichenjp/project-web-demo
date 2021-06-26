@@ -1,0 +1,129 @@
+body{
+	background-image: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%) ;
+}
+
+.container{
+	
+	margin: 0 auto;
+	width: 500px;
+}
+h2{
+	text-align: center;
+	font-family:'Baloo Tamma 2', cursive;
+    font-size: 48px;
+    color: #333333;
+    letter-spacing: 8.75px;
+
+}
+.newin {
+	
+	position: relative;
+}
+.insertnewin{
+	width: 500px;
+	height: 48px;
+}
+
+.addbtn{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	background: #333333;
+	border-radius: 10px 10px ;
+	font-size: 32px;
+	color: #FFFFFF;
+	letter-spacing: 1.23px;
+	text-align: center;
+	
+
+}
+.main{
+	position: relative;
+	width: 500px;
+	height: 536px;
+	margin-top: 8px;
+	background: #FFFFFF;
+	box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+	border-radius: 10px 10px ;
+  
+}
+.menu{
+	display: flex;
+	justify-content: space-around;
+	height: 50px;
+
+}
+.menu li{
+	margin: auto 0;
+	border-bottom: 1px solid #aaa;
+
+}
+.check{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #333333;
+	border-radius: 5px 5px 0 0;
+	
+}
+li{
+	display: flex;
+	justify-content:space-between;
+	margin: 0 24px;
+
+
+}
+.textarea{
+	display: flex;
+	width: 428px;
+	height: 41px;
+	border-bottom: 1px solid #aaa;
+	
+}
+.textarea .itemcontent{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 16px;
+	color: #333333;
+	letter-spacing: 0.62px;
+	
+}
+
+del{
+	color: rgba(51,51,51,0.30);
+}
+
+
+img{
+	width: 14px;
+	height: 14px;
+	padding: 2px;
+	
+}
+
+
+#checkedlab{
+	color:#FFD370;
+	font-size: 20px;
+	margin: 0 5px;
+
+}
+
+.showarea{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	font-size: 14px;
+	letter-spacing: 0.7px;
+	font-family:  'Noto Sans TC';
+	
+}
+.showarea a{
+	text-decoration: none;
+    color: #9F9A91;
+   
+}
