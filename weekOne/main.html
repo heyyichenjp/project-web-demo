@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+   
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <link rel='stylesheet' href='./public/stylesheets/style.css' />
+      <link rel="stylesheet" href="./public/stylesheets/bootstrap-4.3.1.min.css">
+
+       <script src="https://kit.fontawesome.com/60cb495d25.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="./public/javascripts/jquery-3.5.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+          crossorigin="anonymous"></script>
+   
+      <script type="text/javascript" src="./public/javascripts/angularJS-1.4.6.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"
+          integrity="sha512-mvfoZwdzM8yPhlNxN1lU8S5wcfC5aPRCD3W0jsOeA+D75MMCrycxQqIvt6K7c5P7jItn7AXiAreuR+eockUHwQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.js"></script>
+
+    <style>
+        #header {
+            width: 100%;
+            
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        
+
+        #nav {
+            color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 150px;
+            left: 0px;
+            top: 1px;
+            text-align: right;
+            line-height: 150px;
+
+
+        }
+
+        .navbottom {
+            position: absolute;
+            width: 1200px;
+            height: 200px;
+            left: 119px;
+            top: 774px;
+            background: rgba(255, 255, 255, 0.5);
+            mix-blend-mode: normal;
+            border-radius: 10px; 
+
+        }
+        .newest_data {
+               display: flex;
+           }
+    
+           .card {
+               position: relative;
+               width: 400px;
+               height: 400px;
+               background: rgba(0, 0, 0, 0.3);
+               border-radius: 20px;
+    
+           }
+    
+           .cardpic {
+               background: rgba(0, 0, 0, 0.3);
+               border-radius: 20px;
+               width: 100%;
+               height: 100%;
+           }
+    
+           .cardtitle {
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               color: #fff;
+           }
+           #footer{
+        width: 100vw;
+        height: 271px;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        background: #0C3255;
+        margin: 0 auto;
+        color: #fff;
+
+
+    }
+
+    .carousel-indicators li:hover{
+        background-color: #f0874c;
+    }
+
+    .block1-1{
+        background-color: #c8bc64;
+        border-radius: 20px;
+        width: 549px;
+        height: 587px;
+    }
+
+    .smpic{
+        width: 260px;
+    }
+
+    a{
+        color: #fff;
+     }
+
+    
+    </style>
+    
+</head>
+<body>
+    <div ng-app = 'app'>
+        <div id="header">
+
+            <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel" >
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active hi"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1" ></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./public/images/indexPage/pic-1.jpg" class=" w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./public/images/indexPage/pic-2.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/images/indexPage/pic-3.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/images/indexPage/pic-4.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/images/indexPage/pic-5.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                </div>
+                
+            </div>
+            <div id="nav">
+                <span class="p-2"><a href="/main.html">北部介紹</a> </span>
+                <span class="p-2">推薦住宿 </span>
+                <span class="p-2">美食饗宴 </span>
+                <span class="p-2"><a href=""><img src="./public/images/logo/Vector (1).png" alt=""></a> </span>
+                <span class="p-2"><a href=""><img src="./public/images/logo/Vector (2).png" alt=""></a> </span>
+            </div>
+
+
+
+            <div class="navbottom">
+
+                <!-- <input type="button" ng-click='search()' class="bg-warning text-light " value="search"> -->
+
+            </div>
+
+
+        </div>
+      
+ 
+    <div  ng-controller='homeCtrl' >
+        <div class="d-flex my-5">
+            <div class="block1-1" >
+                <div class="imgarea d-flex flex-wrap p-0" style="height: 366px;">
+                    <div class="col-6 m-0">
+                        <img class='smpic' src="./public/images/travel1-1/unsplash_Ha6n8MNgEbQ.png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img class='smpic' src="./public/images/travel1-1/unsplash_KmZdPr2i8HI.png" alt="">
+                    </div>
+                    <div class="w-100 d-none d-md-block"></div>
+                   <div class='col-6'>    <img class='smpic' src="./public/images/travel1-1/unsplash_L6xHmv2R3G4.png" alt=""></div>
+                   <div class="col-6">                 <img class='smpic' src="./public/images/travel1-1/unsplash_TnUG2pWraPE.png" alt=""></div>
+                
+   
+                </div>
+                <div class="textarea p-5">
+                     北部地區「北部地區」包括臺北市、新北市、基隆市、宜蘭縣、桃園市
+                     、新竹縣及新竹市等7個縣市。您可以從臺灣最高樓-臺北101俯瞰臺北美
+                     景；前往故宮博物院一窺歷史典藏文物瑰寶；或走進知名老街如：九份
+                     、淡水、鶯歌、三峽等感受古街風情記憶。
+                </div>
+    
+            </div>
+            <div class=" mx-5"><img src="./public/images/travel1-1/177417a7af55c0329b1a2560925e3f48 2.png" alt="" style="width: 500px;
+                height: 500px;"></div>
+        </div>
+      
+ 
+    </div>
+    <!-- <div ng-view></div> -->
+
+    <div id="footer" class="fluid-container row" >
+        <div class="col my-auto ml-5">
+          
+            <img src="./public/images/logo/Group 2.png" alt="logo"  >
+        </div>
+        <div class="col d-flex" style="flex-direction:column;line-height: 60px;">
+            <span><a href="/layout.html">台灣旅行首頁</a> </span>
+            <span>旅遊景點</span>
+            <span>推薦住宿</span>
+            <span>美食饗宴</span>
+        </div>
+        <div class="col d-flex " style="flex-direction:column;line-height: 60px;">
+            <span>關於我們</span>
+            <span>地址:106433台北市</span>
+            <span>24小時免付費旅遊諮詢熱線:</span>
+            <span>電話:</span>
+        </div>
+        <div class="col"  >
+            <div class="my-5" >
+                <span class="mr-3"><a href=""><img src="./public/images/logo/Vector (3).png" alt=""></a></span>
+                <span class="mr-3"><a href=""><img src="./public/images/logo/Vector (4).png" alt=""></a></span>
+                <span class="mr-3"><a href=""><img src="./public/images/logo/Vector (5).png" alt=""></a></span>
+
+            </div>
+            <div class="d-flex my-5">
+                <input type="text" class="form-control" placeholder="E-mail"  >
+                <div class="input-group-append">
+                  <button class="btn text-light" type="button " style="background-color: #c6bc64;width: 80px;">傳送</button>
+                </div>
+            </div>
+        </div>
+            
+    
+    
+    </div>
+ 
+    
+ 
+
+ 
+    </div>
+    
+    <script>
+         //$('document').ready(function(){
+        //     $('.active').addEventListener('click',function(){
+        //         $(this).addClass('bg-warning')
+        //     })
+
+        // })
+
+        function getAuthorizationHeader() {
+            //  填入自己 ID、KEY 開始
+            //APP ID：927a8d8378864253906fb329c396b0e3
+            //APP Key：AuARaXHJA_XlKJdX7j7rF7U-wCI
+            let AppID = '927a8d8378864253906fb329c396b0e3';
+            let AppKey = 'AuARaXHJA_XlKJdX7j7rF7U-wCI';
+            //  填入自己 ID、KEY 結束
+            let GMTString = new Date().toGMTString();
+            let ShaObj = new jsSHA('SHA-1', 'TEXT');
+            ShaObj.setHMACKey(AppKey, 'TEXT');
+            ShaObj.update('x-date: ' + GMTString);
+            let HMAC = ShaObj.getHMAC('B64');
+            let Authorization = 'hmac username=\"' + AppID + '\", algorithm=\"hmac-sha1\", headers=\"x-date\", signature=\"' + HMAC + '\"';
+            return { 'Authorization': Authorization, 'X-Date': GMTString };
+        }
+       
+        var app = angular.module('app',['ngRoute'])
+
+         //app.config(function($routeProvider) {
+          //   $routeProvider
+           //   .when("/", {
+            //   templateUrl : "layout.html",
+               
+         //}).when('/hi',{
+          //    templateUrl:'main.html'
+          //})
+  
+        // });
+        app.controller('homeCtrl',function($scope,$http){
+            var urlNewest = 'https://ptx.transportdata.tw/MOTC/v2/Tourism/Activity?$filter=Picture%2FPictureUrl1%20ne%20null&$orderby=StartTime%20desc&$top=3&$format=JSON'
+            $http.get(urlNewest,
+                { Headers: getAuthorizationHeader() }
+            ).then(function success(Data) {
+ 
+                //alert('取得成功')
+                var data = JSON.stringify(Data.data);
+                $scope.newest_data = JSON.parse(data)
+                console.log($scope.newest_data);
+ 
+ 
+            })
+ 
+        })
+    </script>
+    
+</body>
+</html>
+

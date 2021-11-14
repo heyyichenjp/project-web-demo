@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <link rel='stylesheet' href='./public/stylesheets/style.css' />
+      <link rel="stylesheet" href="./public/stylesheets/bootstrap-4.3.1.min.css">
+
+       <script src="https://kit.fontawesome.com/60cb495d25.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="./public/javascripts/jquery-3.5.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+          crossorigin="anonymous"></script>
+   
+      <script type="text/javascript" src="./public/javascripts/angularJS-1.4.6.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"
+          integrity="sha512-mvfoZwdzM8yPhlNxN1lU8S5wcfC5aPRCD3W0jsOeA+D75MMCrycxQqIvt6K7c5P7jItn7AXiAreuR+eockUHwQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.js"></script>
+
+    <style>
+        #header {
+            width: 100%;
+            
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        
+
+        #nav {
+            color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 150px;
+            left: 0px;
+            top: 1px;
+            text-align: right;
+            line-height: 150px;
+
+
+        }
+
+        .navbottom {
+            position: absolute;
+            width: 1200px;
+            height: 200px;
+            left: 119px;
+            top: 774px;
+            background: rgba(255, 255, 255, 0.5);
+            mix-blend-mode: normal;
+            border-radius: 10px; 
+
+        }
+        .newest_data {
+               display: flex;
+           }
+    
+           .card {
+               position: relative;
+               width: 400px;
+               height: 400px;
+               background: rgba(0, 0, 0, 0.3);
+               border-radius: 20px;
+    
+           }
+    
+           .cardpic {
+               background: rgba(0, 0, 0, 0.3);
+               border-radius: 20px;
+               width: 100%;
+               height: 100%;
+           }
+    
+           .cardtitle {
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               color: #fff;
+           }
+           #footer{
+        width: 100vw;
+        height: 271px;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        background: #0C3255;
+        margin: 0 auto;
+        color: #fff;
+
+
+    }
+
+    .carousel-indicators li:hover{
+        background-color: #f0874c;
+    }
+    </style>
+    
+</head>
+<body>
+    <div ng-app = 'app'>
+        <div id="header">
+
+            <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel" >
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active hi"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1" ></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./public/images/indexPage/pic-1.jpg" class=" w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./public/images/indexPage/pic-2.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/images/indexPage/pic-3.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/images/indexPage/pic-4.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/images/indexPage/pic-5.jpg" class="d-block w-100" alt="...">
+
+                    </div>
+                </div>
+                
+            </div>
+            <div id="nav">
+                <span class="p-2"><a href="/layout.html#!/view/main.html">旅遊景點</a> </span>
+                <span class="p-2">推薦住宿 </span>
+                <span class="p-2">美食饗宴 </span>
+                <span class="p-2"><a href=""><img src="./public/images/logo/Vector (1).png" alt=""></a> </span>
+                <span class="p-2"><a href=""><img src="./public/images/logo/Vector (2).png" alt=""></a> </span>
+            </div>
+
+
+
+            <div class="navbottom">
+
+                <!-- <input type="button" ng-click='search()' class="bg-warning text-light " value="search"> -->
+
+            </div>
+
+
+        </div>
+      
+ 
+    <div  ng-controller='homeCtrl'>
+         <div class="my-5">
+            <div>
+                <span class="border-bottom">最新活動</span>
+
+                <div class="d-flex flex-wrap mx-10">
+                    <div class="card  " ng-repeat='(key,item) in newest_data' style="margin: 2px 20px;">
+                  
+                        <img src="{{item.Picture.PictureUrl1}}" alt="" class='cardpic'>
+                        <span class="cardtitle">{{item.Name}}</span>
+ 
+                    </div>
+ 
+                </div>
+ 
+ 
+            </div>
+            <!-- <div>
+                <h3>熱門景點排行</h3>
+ 
+            </div>
+            <div>
+                <h3>旅遊影音</h3>
+ 
+            </div> -->
+ 
+        </div>
+    </div>
+    <div ng-view></div>
+
+    <div id="footer" class="fluid-container row" >
+        <div class="col my-auto ml-5">
+          
+            <img src="./public/images/logo/Group 2.png" alt="logo"  >
+        </div>
+        <div class="col d-flex" style="flex-direction:column;line-height: 60px;">
+            <span>台灣旅行</span>
+            <span>旅遊景點</span>
+            <span>推薦住宿</span>
+            <span>美食饗宴</span>
+        </div>
+        <div class="col d-flex " style="flex-direction:column;line-height: 60px;">
+            <span>關於我們</span>
+            <span>地址:106433台北市</span>
+            <span>24小時免付費旅遊諮詢熱線:</span>
+            <span>電話:</span>
+        </div>
+        <div class="col"  >
+            <div class="my-5" >
+                <span class="mr-3"><a href=""><img src="./public/images/logo/Vector (3).png" alt=""></a></span>
+                <span class="mr-3"><a href=""><img src="./public/images/logo/Vector (4).png" alt=""></a></span>
+                <span class="mr-3"><a href=""><img src="./public/images/logo/Vector (5).png" alt=""></a></span>
+
+            </div>
+            <div class="d-flex my-5">
+                <input type="text" class="form-control" placeholder="E-mail"  >
+                <div class="input-group-append">
+                  <button class="btn text-light" type="button " style="background-color: #c6bc64;width: 80px;">傳送</button>
+                </div>
+            </div>
+        </div>
+            
+    
+    
+    </div>
+ 
+    
+ 
+
+ 
+    </div>
+    
+   <script>
+	var app = angular.module('app',['ngRoute'])
+
+	 app.config(function($routeProvider) {
+		 $routeProvider
+	      .when("/", {
+		   templateUrl : "layout.html",
+		   
+	 }).when('/hi',{
+	      templateUrl:'main.html',
+	  })
+
+	 })
+   </script>
+
+       
+     
+    
+</body>
+</html>
+
